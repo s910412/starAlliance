@@ -13,8 +13,8 @@
     position: relative;
 }
 
-.carousel {
-    width: 100%;
+.jumbotron .carousel {
+    width: 1350px;
     height: 520px;
     overflow: hidden;
     position: relative;
@@ -22,10 +22,11 @@
 }
 
 .jbimg {
-    width: 100%;
-    height: 100%;
+    width: 1350px;
+    height: 520px;
     position: relative;
     top: -350px;
+    left: 0;
     z-index: 1;
 }
 
@@ -170,25 +171,28 @@
     border-radius: 100px;
     box-shadow: 5px 5px 8px #333;
     background-image: url(../img/sky.jpg);
-    position: relative;
+    overflow: hidden;
+}
+
+@media screen and( max-width: 1350px) {
+    #Suggest .carousel {
+        overflow: scroll;
+    }
 }
 
 #Suggest h1 {
     padding-bottom: 10px;
     text-shadow: 0 5px 40px white;
     font-weight: 700;
-    z-index: 5;
 }
 
 #Suggest img {
     width: 100%;
-    z-index: 5;
 }
 
 #Suggest h3 {
     padding-top: 10px;
     text-shadow: 0 3px 5px white;
-    z-index: 5;
 }
 
 
