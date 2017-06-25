@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
+    <link rel="stylesheet" href="bower_components/raty/lib/jquery.raty.css">
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="bower_components/wow/dist/wow.min.js"></script>
+    <script src="bower_components/raty/lib/jquery.raty.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery.easing/js/jquery.easing.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+    <title>Star_Alliance</title>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!--note navbar-->
+    <!--導覽列開始-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- 導覽列 RWD選單圖示與品牌連結 -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">觸發縮放</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#Header"><img src="img/staralliance.png" alt=""></a>
+            </div>
+
+            <!-- 導覽列選項 與導覽列中的表單元素 -->
+            <!-- 小螢幕時要被收起的元素 放置於 navbar-collapse -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!-- 導覽列中的導覽清單 -->
+                <ul class="nav navbar-nav">
+                    <li><a target="_blank" href="http://www.staralliance.com/zh_TW/home">星盟首頁</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#subscribeModal">星盟成員</a></li>
+                    <li><a target="_blank" href="http://star-alliance.innosked.com/default.aspx?lang_id=ch">航線圖</a></li>
+
+                    <!-- 導覽清單中的dropdown選單 -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">友善連結 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a target="_blank" href="https://www.skyscanner.com.tw/">Skyscanner</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a target="_blank" href="https://www.eztravel.com.tw/">易遊網</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- 拉到右邊的導覽列清單 -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#Header">Header</a></li>
+                    <li><a href="#City">City</a></li>
+                    <li><a href="#Ticket">Ticket</a></li>
+                    <li><a href="#Suggest">Suggest</a></li>
+                    <li><a href="#footer">Footer</a></li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!--導覽列結束-->
+    <!--note header-->
+    <header id="Header">
+        <div class="jumbotron" id="Header">
+
+            <!--輪播開始-->
+            <div id="slideshow" class="carousel slide " data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <!--輪播圖片或內容-->
+                    <div class="item active">
+                        <h1 class="jb1">讓夢想在星空中飛翔</h1>
+                        <img class="jbimg" src="img/stranight.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <h1 class="jb2">探索世界的過往</h1>
+                        <img class="jbimg" src="img/machu.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <h1 class="jb3">留下終生的回憶</h1>
+                        <img class="jbimg" src="img/ocean.jpg" alt="">
+                    </div>
+                </div>
+                <!--上一頁 下一頁 按鈕-->
+                <div class="control-btn">
+                    <a href="#slideshow" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a href="#slideshow" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right" ></span></a>
+                </div>
+                <!--小圓點換頁-->
+                <ol class="carousel-indicators">
+                    <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+                    <li data-target="#slideshow" data-slide-to="1"></li>
+                    <li data-target="#slideshow" data-slide-to="2"></li>
+                </ol>
+            </div>
+            <!--輪播結尾-->
+        </div>
+
+        <!--全版面大型看板結尾-->
+    </header>
+    <!--  note City  -->
+    <section id="City">
+        <div class="container">
+            <div class="row">
+                <a target="_blank" href="https://zh.wikipedia.org/wiki/%E8%87%BA%E7%81%A3" class="col-md-3 col-sm-6 col-xs-12" id="photo1">
+                    <div>
+                        <h2>台灣</h2>
+                        <p>長榮航空</p>
+                    </div>
+                </a>
+                <a target="_blank" href="https://zh.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC" class="col-md-3 col-sm-6 col-xs-12" id="photo2">
+                    <div>
+                        <h2>日本</h2>
+                        <p>全日空</p>
+                    </div>
+                </a>
+                <a target="_blank" href="https://zh.wikipedia.org/wiki/%E6%96%B0%E5%8A%A0%E5%9D%A1" class="col-md-3 col-sm-6 col-xs-12" id="photo3">
+                    <div>
+                        <h2>新加坡</h2>
+                        <p>新加坡航空</p>
+                    </div>
+                </a>
+                <a target="_blank" href="https://zh.wikipedia.org/wiki/%E6%96%B0%E8%A5%BF%E5%85%B0" class="col-md-3 col-sm-6 col-xs-12" id="photo4">
+                    <div>
+                        <h2>紐西蘭</h2>
+                        <p>紐西蘭航空</p>
+                    </div>
+                </a>
+                <a target="_blank" href="https://zh.wikipedia.org/wiki/%E5%9C%9F%E8%80%B3%E5%85%B6" class="col-md-3 col-sm-6 col-xs-12" id="photo5">
+                    <div>
+                        <h2>土耳其</h2>
+                        <p>土耳其航空</p>
+                    </div>
+                </a>
+                <a target="_blank" href="https://zh.wikipedia.org/wiki/%E7%BE%8E%E5%9C%8B" class="col-md-3 col-sm-6 col-xs-12" id="photo6">
+                    <div>
+                        <h2>美國</h2>
+                        <p>聯合航空</p>
+                    </div>
+                </a>
+                <a target="_blank" href="https://zh.wikipedia.org/wiki/%E5%BE%B7%E5%9B%BD" class="col-md-3 col-sm-6 col-xs-12" id="photo7">
+                    <div>
+                        <h2>德國</h2>
+                        <p>漢莎航空</p>
+                    </div>
+                </a>
+                <a target="_blank" href="https://zh.wikipedia.org/wiki/%E5%8A%A0%E6%8B%BF%E5%A4%A7" class="col-md-3 col-sm-6 col-xs-12" id="photo8">
+                    <div>
+                        <h2>加拿大</h2>
+                        <p>加拿大航空</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  note Ticket  -->
+    <section id="Ticket">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7gTXWb26bdk" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6 col-sm-12 airport">
+                    <div class="Ticket-word">
+                        <h1>開始您的旅程</h1>
+                        <br>
+                        <a target="_blank" class="btn btn-info btn-lg" href="http://www.staralliance.com/zh_TW/flight-search">前往購票</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  note Suggest  -->
+    <section id="Suggest">
+
+        <div class="container">
+            <div class="row">
+
+                <!--輪播開始-->
+                <div id="slideshow2" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <!--輪播圖片或內容-->
+                        <div class="item active">
+                            <h1 class="col-md-10 col-md-offset-1">全日空：ANA</h1>
+                            <div class="col-md-3 col-md-offset-1">
+                                <img class="img-circle" src="img/ANA.jpg" alt="">
+                            </div>
+                            <div class="col-md-7">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nemo inventore, dicta voluptates voluptas corrupti tempora et dignissimos cum blanditiis sit repudiandae quam dolorem, beatae possimus, facere ullam corporis minima neque consectetur nobis tempore quis rerum rem. Eaque numquam distinctio quos eligendi! Et magnam culpa, enim harum delectus mollitia suscipit?</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h1 class="col-md-10 col-md-offset-1">新加坡航空</h1>
+                            <div class="col-md-3 col-md-offset-1">
+                                <img class="img-circle" src="img/SINGAPORE-AIRLINE.jpg" alt="">
+                            </div>
+                            <div class="col-md-7">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nemo inventore, dicta voluptates voluptas corrupti tempora et dignissimos cum blanditiis sit repudiandae quam dolorem, beatae possimus, facere ullam corporis minima neque consectetur nobis tempore quis rerum rem. Eaque numquam distinctio quos eligendi! Et magnam culpa, enim harum delectus mollitia suscipit?</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h1 class="col-md-10 col-md-offset-1">長榮航空：EVA</h1>
+                            <div class="col-md-3 col-md-offset-1">
+                                <img class="img-circle" src="img/EVA.jpg" alt="">
+                            </div>
+                            <div class="col-md-7">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nemo inventore, dicta voluptates voluptas corrupti tempora et dignissimos cum blanditiis sit repudiandae quam dolorem, beatae possimus, facere ullam corporis minima neque consectetur nobis tempore quis rerum rem. Eaque numquam distinctio quos eligendi! Et magnam culpa, enim harum delectus mollitia suscipit?</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h1 class="col-md-10 col-md-offset-1">土耳其航空</h1>
+                            <div class="col-md-3 col-md-offset-1">
+                                <img class="img-circle" src="img/TURKISH-AIRLINE.jpg" alt="">
+                            </div>
+                            <div class="col-md-7">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nemo inventore, dicta voluptates voluptas corrupti tempora et dignissimos cum blanditiis sit repudiandae quam dolorem, beatae possimus, facere ullam corporis minima neque consectetur nobis tempore quis rerum rem. Eaque numquam distinctio quos eligendi! Et magnam culpa, enim harum delectus mollitia suscipit?</h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <h1 class="col-md-10 col-md-offset-1">北歐航空</h1>
+                            <div class="col-md-3 col-md-offset-1">
+                                <img class="img-circle" src="img/SAS.jpg" alt="">
+                            </div>
+                            <div class="col-md-7">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus nemo inventore, dicta voluptates voluptas corrupti tempora et dignissimos cum blanditiis sit repudiandae quam dolorem, beatae possimus, facere ullam corporis minima neque consectetur nobis tempore quis rerum rem. Eaque numquam distinctio quos eligendi! Et magnam culpa, enim harum delectus mollitia suscipit?</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!--上一頁 下一頁 按鈕-->
+                    <div class="control-btn">
+                        <a href="#slideshow2" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                        <a href="#slideshow2" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right" ></span></a>
+                    </div>
+                    <!--小圓點換頁-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#slideshow2" data-slide-to="0" class="active"></li>
+                        <li data-target="#slideshow2" data-slide-to="1"></li>
+                        <li data-target="#slideshow2" data-slide-to="2"></li>
+                        <li data-target="#slideshow2" data-slide-to="3"></li>
+                        <li data-target="#slideshow2" data-slide-to="4"></li>
+                    </ol>
+                </div>
+                <!--輪播結尾-->
+            </div>
+        </div>
+    </section>
+
+    <!--  note footer  -->
+    <footer id="footer">
+        <h1 class="section-title">Contact Us</h1>
+        <h4><a href="" class="email">service@brand.com</a></h4>
+        <p class="address">100 Sun Ave NE, Albuquerque, New Mexico 87109</p>
+        <div class="social-links">
+            <a href="#"><i class="fa fa-2x fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-2x fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+        <div class="footer-bar">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Join us</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Policy</a></li>
+                </ul>
+                <p class="copy-right">&copy; 2017 Brand
+                    <p>
+            </div>
+        </div>
+    </footer>
+    <!-- note Modal -->
+    <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">成員列表</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-striped table-hover table-border">
+                        <tbody>
+                            <tr>
+                                <td>亞德里亞航空</td>
+                                <td>愛琴海航空</td>
+                                <td>加拿大航空</td>
+                                <td>中國國際航空</td>
+                            </tr>
+                            <tr>
+                                <td>印度航空</td>
+                                <td>紐西蘭航空</td>
+                                <td>全日本空輸</td>
+                                <td>韓亞航空</td>
+                            </tr>
+                            <tr>
+                                <td>奧地利航空</td>
+                                <td>哥倫比亞航空</td>
+                                <td>布魯塞爾航空</td>
+                                <td>巴拿馬航空</td>
+                            </tr>
+                            <tr>
+                                <td>克羅埃西亞航空</td>
+                                <td>埃及航空</td>
+                                <td>衣索比亞航空</td>
+                                <td>長榮航空</td>
+                            </tr>
+                            <tr>
+                                <td>波蘭航空</td>
+                                <td>德國漢莎航空</td>
+                                <td>北歐航空</td>
+                                <td>深圳航空 </td>
+                            </tr>
+                            <tr>
+                                <td>新加坡航空</td>
+                                <td>南非航空</td>
+                                <td>瑞士國際航空</td>
+                                <td>葡萄牙航空</td>
+                            </tr>
+                            <tr>
+                                <td>泰國國際航空</td>
+                                <td>土耳其航空</td>
+                                <td>聯合航空1</td>
+                                <td>哥倫比亞巴西航空</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">離開</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

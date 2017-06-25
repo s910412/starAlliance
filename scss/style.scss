@@ -1,0 +1,251 @@
+/*note navbar*/
+
+.navbar-brand>img {
+    height: 100%;
+}
+
+
+/*note header*/
+
+.jumbotron {
+    padding: 50px 0 0 0;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.carousel {
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+    position: relative;
+    color: white;
+}
+
+.jbimg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -350px;
+    z-index: 1;
+}
+
+.jb1,
+.jb2,
+.jb3 {
+    position: relative;
+    z-index: 5;
+    font-weight: 700;
+    text-shadow: 8px 8px 10px #444;
+}
+
+.jb1 {
+    top: 50px;
+    left: 75px;
+}
+
+.jb2 {
+    top: 200px;
+    left: 500px;
+}
+
+.jb3 {
+    top: 350px;
+    left: 800px;
+}
+
+
+/*note City*/
+
+#City {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+[id^="photo"] {
+    border: 1px solid #999;
+    border-radius: 10px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 5px #111;
+    transition: all 0.8s ease;
+    text-decoration: none;
+}
+
+#photo1 {
+    background-image: url(../img/Taipei.jpg);
+}
+
+#photo2 {
+    background-image: url(../img/Tokyo.jpg);
+}
+
+#photo3 {
+    background-image: url(../img/Singapore.jpg);
+}
+
+#photo4 {
+    background-image: url(../img/NewZealand.jpg);
+}
+
+#photo5 {
+    background-image: url(../img/Turkey.jpg);
+}
+
+#photo6 {
+    background-image: url(../img/America.jpg);
+}
+
+#photo7 {
+    background-image: url(../img/German.jpg);
+}
+
+#photo8 {
+    background-image: url(../img/Canada.jpg);
+}
+
+[id^="photo"]:hover {
+    filter: grayscale(0);
+    text-shadow: 5px 5px 10px #333;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+[id^="photo"]:active {
+    text-decoration: none;
+    color: white;
+}
+
+[id^="photo"]:visited {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*note Ticket*/
+
+#Ticket {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.airport {
+    height: 315px;
+    background-image: url(../img/airport.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-weight: 900px;
+    text-shadow: 5px 5px 1px #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Ticket-word h1 {
+    font-size: 45px;
+}
+
+
+/*note Suggest*/
+
+#Suggest {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+#Suggest .carousel {
+    height: 350px;
+    color: #111;
+    border: 1px solid #777;
+    border-radius: 100px;
+    box-shadow: 5px 5px 8px #333;
+    background-image: url(../img/sky.jpg);
+    position: relative;
+}
+
+#Suggest h1 {
+    padding-bottom: 10px;
+    text-shadow: 0 5px 40px white;
+    font-weight: 700;
+    z-index: 5;
+}
+
+#Suggest img {
+    width: 100%;
+    z-index: 5;
+}
+
+#Suggest h3 {
+    padding-top: 10px;
+    text-shadow: 0 3px 5px white;
+    z-index: 5;
+}
+
+
+/* note footer */
+
+footer {
+    padding-top: 30px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
+footer * {
+    color: white;
+}
+
+.footer-bar {
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+}
+
+.footer-bar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-bar ul>li {
+    float: left;
+    line-height: 50px;
+    margin-right: 10px;
+}
+
+.footer-bar p {
+    float: right;
+    line-height: 50px;
+    margin: 0;
+}
+
+.social-links a {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 8px;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.social-links a:hover {
+    background-color: white;
+}
+
+.social-links a>i.fa:before {
+    line-height: 40px;
+    color: #314858;
+}
