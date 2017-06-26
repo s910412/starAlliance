@@ -57,6 +57,7 @@
                             <li><a target="_blank" href="https://www.eztravel.com.tw/">易遊網</a></li>
                         </ul>
                     </li>
+                    <li><a href="#" data-toggle="modal" data-target="#mileModal">哩程介紹</a></li>
                 </ul>
 
                 <!-- 拉到右邊的導覽列清單 -->
@@ -266,7 +267,7 @@
             </div>
         </div>
     </footer>
-    <!-- note Modal -->
+    <!-- note subscribeModal -->
     <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -328,6 +329,37 @@
             </div>
         </div>
     </div>
+
+    <!--  mileModal  -->
+    <div class="modal fade" id="mileModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Oops 本介面施工中</h4>
+                </div>
+                <div class="modal-body">
+                    <h4>本網站資金不足，徵求贊助，請輸入存簿帳號及密碼</h4>
+                    <input type="text" class="form-control" placeholder="存簿帳號">
+                    <input type="text" class="form-control" placeholder="存簿密碼">
+
+                    <h5>進度為30%</h5>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width:30%">
+                            <span class="sr-only">進度為30%</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 
